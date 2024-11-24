@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aftab Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cd750e7d38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                
+                <ul id="sidemenu">
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" ></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li> 
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+            </nav>
+            <div class="header-text">
+                <h2 class="mb-0">Hi, I'm</h2>
+                <h1 style="color: #ff004f;">Aftab Muddassir</h1>
+                <h3>Software Engineer </h3>
+                <p class="description">
+                    A highly motivated and creative Software Developer with expertise in Fullstack Development. 
+                 <br> Proven success in creating innovative 
+                    solutions and delivering high-quality projects across domains.</p>
+            </div>
+            <div class="social-icons-home">
+                <a href="https://www.linkedin.com/in/aftab-muddassir-441434171/" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="text-[#0077b5] text-4xl hover:text-[#005582] transition duration-300" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
+                <a href="https://github.com/aftabmuddassir" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="text-black text-4xl hover:text-gray-700 transition duration-300" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
+                <a href="https://leetcode.com/u/aaftab_07/" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="text-[#FFA116] text-4xl hover:text-[#CC8400] transition duration-300" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path></svg></a>
+                <a href="images/MohammedAbdul_AftabMuddassir_Resume.pdf" download="MohammedAbdul_AftabMuddassir_Resume" target="_blank" rel="noopener noreferrer" > <i class="fa-regular fa-file-pdf" ></i> </a>
+            </div>
+    
+            
+            
+        
+        </div>
+
+    </div>
+
+    <!---------------------About------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/unnamed.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">
+                    About Me
+                </h1>
+                <p>
+                   
+                    After over three years as a Full Stack Software Engineer, I am now pursuing my Master’s in
+                    Computer Science and Engineering at the University at Buffalo. I am advancing my expertise in 
+                    Machine Learning and Data Intensive Computing 
+                    and deepening my expertise in computer security while  strengthening core knowledge
+                    in subjects like algorithms, operating systems, and distributed systems. 
+                    This journey is enhancing my problem-solving skills and technical versatility, 
+                    shaping me into a well-rounded software engineer equipped to build innovative 
+                    and scalable solutions.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links"  onclick="opentab('experience')"> Experience </p>
+                    <p class="tab-links"  onclick="opentab('education')"> Education </p>
+                </div>
+                
+                  <!-- Skills -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span> <br> Web App Development</li>
+                        <li><span>AI/ML</span> <br> AI/ML integrated App Development</li>
+                        <li><span>Computer Security</span> <br> Securing Data and Systems</li>
+                    </ul>
+                </div>
+                <!-- Experience -->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Dec 2021 - July 2024</span> <br> Software Engineer at LTIMindtree</li>
+                        <li><span>Aug 2021 - Dec 2021</span> <br> Software Engineering Intern at LTIMindtree</li>
+                    </ul>
+                </div>
+                   <!-- Education -->
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Dec 2025 - August 2024</span> <br> MS in Computer Science at University at Buffalo, USA</li>
+                        <li><span>Aug 2017 - July 2021</span> <br> BS in Electronics & Communication at JNTU Ananthapur, India</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<!-- ----------------------services--------------- -->
+<div id="services">
+<div class="container">
+
+    <h1 class="sub-title">
+       My Services
+    </h1>
+    <div class="services-list">
+        <div>
+            <i class="fa-solid fa-globe"></i>
+            <h2>Web Development</h2>
+            <p>Description about Web Design</p>
+            <a href="#">Learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Backend Development</h2>
+            <p>Description about BE dev</p>
+            <a href="#">Learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Computer Security</h2>
+            <p>Description about Comp Sec</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- ---------------------portfolio------------------ -->
+ <div id="portfolio">
+    <div class="container">
+
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/agent.png">
+                <div class="layer">
+                    <h3>Agent</h3>
+                    <p>about agent</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/door.png">
+                <div class="layer">
+                    <h3>Door</h3>
+                    <p>about door</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/exit.png">
+                <div class="layer">
+                    <h3>Agent</h3>
+                    <p>about door</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+<a href="#" class="btn"> See more</a>
+
+    </div>
+ </div>
+
+ <!-- ------------------------contact------------------- -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p> <i class="fa-regular fa-envelope"></i> m54@buffalo.edu</p>
+                <p><i class="fa-solid fa-phone"></i> +1 7162285274</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/MohammedAbdul_AftabMuddassir_Resume.pdf" download="MohammedAbdul_AftabMuddassir_Resume" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email"  placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"> Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Aftab </p>
+    </div>
+  </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwhVlaLWXg6Ep5pm30AsqKPtFUH66vTQj9f-2WvQEQsfd9BcesoJNrweIHZwZXwVT-Osg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
