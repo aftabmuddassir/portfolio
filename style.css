@@ -437,9 +437,9 @@ nav .fa-xmark, nav .fa-bars {
 
 
 @media only screen and (max-width: 600px) {
-    #header{
+    /* #header{
         background-image: url(images/phone_background.png);
-    }
+    } */
 
     .header-text{
         margin-top: 100%;
