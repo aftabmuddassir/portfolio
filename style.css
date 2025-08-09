@@ -105,6 +105,12 @@ nav ul li a:hover::after{
     font-size: 18px; 
 }
 
+/* CTA buttons */
+.cta-buttons{ margin-top: 24px; display: flex; gap: 16px; }
+.btn-cta{ background:#ff004f; border-color:#ff004f; }
+.btn-outline{ border:1px solid #fff; color:#fff; text-decoration:none; padding: 12px 28px; border-radius:6px; transition: background .3s, color .3s, border-color .3s; }
+.btn-outline:hover{ background:#fff; color:#080808; border-color:#fff; }
+
 .social-icons-home p{
     margin-top: 20px;
 }
@@ -221,6 +227,9 @@ nav ul li a:hover::after{
     display: block;
 }
 
+/* About actions */
+.about-actions{ margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap; }
+
 /* ---------------------------services------------------------ */
 #services{
     padding: 30px 0; 
@@ -267,6 +276,9 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 
 }
+
+/* Skills polish */
+.skills-grid .skill-card p{ font-size:14px; color:#ddd; }
 
 /* ---------------------portfolio----------------- */
 #portfolio{
@@ -354,6 +366,17 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff004f;
 }
+
+/* --------------------Experience timeline------------------ */
+#experience{ padding: 50px 0; }
+.timeline{ position: relative; margin-top: 30px; }
+.timeline:before{ content:''; position:absolute; left: 12px; top: 0; bottom: 0; width: 2px; background:#2e2e2e; }
+.timeline-item{ position: relative; padding-left: 40px; margin-bottom: 28px; }
+.timeline-item:before{ content:''; position:absolute; left:6px; top: 6px; width:12px; height:12px; border-radius:50%; background:#ff004f; }
+.timeline-item h3{ margin-bottom:6px; }
+.timeline-item .muted{ color:#bbbbbb; font-size:14px; margin-bottom:8px; }
+.timeline-item ul{ margin-left: 16px; }
+.timeline-item ul li{ margin:6px 0; }
 
 /* --------------------contact me------------------ */
 
