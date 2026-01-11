@@ -560,6 +560,97 @@
             font-weight: 500;
         }
 
+        /* Awards Section */
+        .awards {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .award-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .award-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--gradient);
+        }
+
+        .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .award-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .award-title {
+            font-size: 1.3rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .award-issuer {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .award-date {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .award-description {
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* LinkedIn Section */
+        .linkedin-posts {
+            background: white;
+        }
+
+        .linkedin-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .linkedin-embed {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+
 
         /* Projects Section */
         .projects-grid {
@@ -801,6 +892,11 @@
                 padding: 0 1rem;
             }
 
+            .awards-grid {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+
             .section {
                 padding: 4rem 1rem;
             }
@@ -870,6 +966,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#awards">Awards</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -888,6 +985,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#awards">Awards</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -946,6 +1044,26 @@
 
                 <p>I'm always excited to take on new challenges and collaborate on innovative projects that push the
                     boundaries of what's possible on the web.</p>
+            </div>
+        </div>
+
+        <!-- Featured LinkedIn Post -->
+        <div style="margin-top: 4rem;">
+            <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 1rem; color: var(--dark);">Featured Post</h3>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 2rem;">Highlighted achievement</p>
+            <div class="linkedin-container">
+                <div class="linkedin-embed fade-in">
+                    <a href="https://www.linkedin.com/posts/m-a-aftab-muddassir-441434171_im-grateful-to-have-been-featured-in-the-activity-7219042263794864128-5IAH?utm_source=share&utm_medium=member_desktop&rcm=ACoAACjSEHEBnP4PA-JsdmXgOIjVG-98CyjY9DY"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       style="display: block; text-decoration: none;">
+                        <img src="images/featured_post.png"
+                             alt="Featured LinkedIn Post"
+                             style="width: 100%; height: auto; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: pointer;"
+                             onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 10px 25px rgba(0, 0, 0, 0.15)';"
+                             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 5px 15px rgba(0, 0, 0, 0.1)';">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -1085,6 +1203,42 @@ phases of the cloud migration project</li>
         </div>
     </section>
 
+    <!-- Awards Section -->
+    <section id="awards" class="section awards">
+        <h2 class="section-title fade-in">Awards & Certifications</h2>
+        <p class="section-subtitle fade-in">Recognition and achievements</p>
+        <div class="awards-grid">
+            <div class="award-card fade-in">
+                <div class="award-icon">🤖</div>
+                <h3 class="award-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+                <div class="award-issuer">Oracle</div>
+                <div class="award-date">2025</div>
+                <p class="award-description">The Oracle Cloud Infrastructure (OCI) AI Foundations certification is designed to introduce learners to the fundamental concepts of artificial intelligence (AI) and machine learning (ML), with a specific focus on the practical application of these technologies within the Oracle Cloud Infrastructure.</p>
+            </div>
+            <div class="award-card fade-in">
+                <div class="award-icon">☁️</div>
+                <h3 class="award-title">AWS Certified Cloud Practitioner</h3>
+                <div class="award-issuer">Amazon Web Services</div>
+                <div class="award-date">2024</div>
+                <p class="award-description">Foundational certification demonstrating comprehensive understanding of AWS Cloud concepts, core services, security, architecture, pricing, and support. Validated knowledge of cloud computing principles and AWS platform capabilities.</p>
+            </div>
+            <div class="award-card fade-in">
+                <div class="award-icon">🏆</div>
+                <h3 class="award-title">Spot On - Master Mind Award</h3>
+                <div class="award-issuer">LTIMindtree</div>
+                <div class="award-date">2023</div>
+                <p class="award-description">Honored for outstanding contributions in delivering a crucial module essential for the project's successful deployment. Working closely with clients at their location, meticulously understood requirements and developed high-quality code. Earned client praise and ensured project success through relentless efforts and dedication to client satisfaction.</p>
+            </div>
+            <div class="award-card fade-in">
+                <div class="award-icon">⭐</div>
+                <h3 class="award-title">Oracle Certified Professional, Java SE</h3>
+                <div class="award-issuer">Oracle</div>
+                <div class="award-date">2022</div>
+                <p class="award-description">Certified in Java SE development, demonstrating proficiency in core Java concepts and enterprise application development.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2 class="section-title fade-in">Featured Projects</h2>
@@ -1213,7 +1367,7 @@ phases of the cloud migration project</li>
                     <div class="contact-icon">📍</div>
                     <div>
                         <div>Location</div>
-                        <div>New York, NY</div>
+                        <div>New York, NY (Open to relocation in the US)</div>
                     </div>
                 </div>
             </div>
