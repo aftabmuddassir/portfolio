@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2E0S9P5T69"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2E0S9P5T69');
+    </script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" id="meta-description" content="Tech blog by Aftab Muddassir">
+    <title id="page-title">Blog - Aftab Muddassir</title>
+
+    <!-- Canonical tag will be inserted here by JavaScript -->
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Highlight.js for code syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <link rel="stylesheet" href="css/blog-styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">M. A. Aftab Muddassir</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#awards">Awards</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="blogs.html" class="active">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#awards">Awards</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="blogs.html" class="active">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </div>
+    </header>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post">
+        <div class="container">
+            <div class="post-header">
+                <a href="blogs.html" class="back-link">← Back to Blog</a>
+                <h1 id="post-title" class="post-title">Loading...</h1>
+                <div class="post-meta">
+                    <span id="post-date" class="post-date"></span>
+                    <span class="separator">•</span>
+                    <span id="post-read-time" class="post-read-time"></span>
+                </div>
+                <div id="post-tags" class="post-tags"></div>
+                <div id="canonical-notice" class="canonical-notice" style="display: none;">
+                    <p>This article was originally published on <a id="canonical-link" href="" target="_blank" rel="noopener noreferrer"></a></p>
+                </div>
+            </div>
+
+            <div id="post-content" class="post-content">
+                <div class="loading">Loading content...</div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Aftab Muddassir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/blog-renderer.js"></script>
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Load blog post
+        loadBlogPost();
+    </script>
+</body>
+
+</html>

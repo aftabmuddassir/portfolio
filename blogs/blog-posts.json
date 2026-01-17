@@ -1,0 +1,11 @@
+[
+  {
+    "slug": "thread-safety-real-world-example",
+    "title": "Understanding Thread Safety: A Real-World Example from Hifdh Quest",
+    "date": "2026-01-17",
+    "description": "Learn about thread safety in Java through a real-world example from building Hifdh Quest, an ed-tech quiz game. Explore solutions using AtomicInteger, synchronized, database locking, and Redis.",
+    "canonical": "",
+    "tags": ["Java", "Thread Safety", "Concurrency", "Backend"],
+    "readTime": "7 min read"
+  }
+]
